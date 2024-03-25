@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.The Secret Altar of Treasures</title>
+    <link rel="stylesheet" type="text/css" href="styles4.css">
+</head>
+<body>
+    
+    <div class="pirate-task">
+        <header>
+            <h1>2.The Secret Altar of Treasures</h1> <!-- Tytuł gry -->
+        </header>
+        <main>
+        <p>
+            <img src="piratka.jpg" alt="piratka" width="600" height="500" class="move-right">
+            <strong>My fellow pirates, there is a second task ahead of you that you must solve.<br>
+            On the island, you will find an ancient altar with nine stone blocks with engraved letters.<br>
+            Your task is to arrange the letters in the correct order.<br>
+            Time is running out as other crews have also heard about this treasure and are chasing you!</strong>
+        </p>
+        <div id="puzzle">
+            <div class="letter" id="letter1" draggable="true">H</div>
+            <div class="letter" id="letter2" draggable="true">D</div>
+            <div class="letter" id="letter3" draggable="true">F</div>
+            <div class="letter" id="letter4" draggable="true">A</div>
+            <div class="letter" id="letter5" draggable="true">I</div>
+            <div class="letter" id="letter6" draggable="true">G</div>
+            <div class="letter" id="letter7" draggable="true">C</div>
+            <div class="letter" id="letter8" draggable="true">E</div>
+            <div class="letter" id="letter9" draggable="true">B</div>
+
+        </div>
+        <button id="checkButton">Check</button>
+    </div>
+</main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-message"></p>
+            <button id="nextButton" onclick="nextTask()" style="display: none;">Next</button>
+        </div>
+    <script src="script4.js"></script>
+</body>
+</html>

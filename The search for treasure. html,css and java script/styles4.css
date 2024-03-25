@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #533017, #2c1e15);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;/* Rozmiar tytułu */
+    color: #ffd700; /* Złoty kolor tytułu */
+    text-shadow: 2px 2px 4px rgb(247, 247, 247); /* Cień tekstu */
+    
+}
+
+ main p:nth-child(1) {
+    font-size: 28px;
+    border: 2px solid #8B4513; /* Ramka w kolorze brązowym (przypominającym drewno) */
+    padding: 10px; /* Wypełnienie wewnątrz ramki */
+    max-width: 600px; /* Maksymalna szerokość tekstu */
+    background-color: #D2B48C; /* Tło w kolorze beżowym (przypominającym piasek) */
+    color: #000; /* Kolor tekstu */
+    margin-left: 100px;
+    margin-bottom: 20px; /* Dodanie marginesu na dole */
+} 
+
+img {
+    position: relative; /* Ustawienie pozycji względem pierwotnego miejsca */
+}
+
+.move-right {
+    position: absolute;
+    top: 10px; /* Przesunięcie w górę o 50 pikseli */
+    right: 382px; /* Przesunięcie w prawo o 100 pikseli */
+    transform: scale(0.8);
+    
+}
+
+
+
+#puzzle {
+    display: grid; /* Ustawienie układu siatki dla obszaru puzzli */
+    grid-template-columns: repeat(3, 1fr); /* Podział na trzy kolumny o równej szerokości */
+    gap: 10px; /* Dodanie odstępu między elementami */
+    margin-bottom: 20px; /* Dodanie odstępu na dole */
+    margin-top: 100px; /* Dodanie marginesu na górze */
+
+}    
+
+.letter {
+    background-color:#853b0b ; /* Ustawienie koloru tła dla bloków liter */
+    border-radius: 5px; /* Zaokrąglenie narożników */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    font-size: 24px; /* Ustawienie rozmiaru czcionki */
+    padding: 10px; /* Dodanie wewnętrznego odstępu */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    margin-top: 10px; /* Dodanie marginesu górnego */
+    color: #fff; /* Kolor tekstu */
+    font-family: 'IM Fell English', serif; /* Wybór czcionki w klimacie pirackim */
+}
+
+button {
+    display: block;
+    margin: 30px auto 80px;
+    padding: 10px 20px;
+    background-color: #8B4513; /* Kolor tła przycisku w odcieniu brązowym */
+    color: #FFF; /* Kolor tekstu */
+    border: none;
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    cursor: pointer;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; /* Font piracki */
+    font-size: 16px; /* Rozmiar czcionki */
+}
+
+button:hover {
+    background-color: #CD853F; /* Kolor tła przycisku po najechaniu myszką */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #8B4513;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #fefefe;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close {
+    color: #fdfdfd;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-message {
+    color: #fefefe;
+    font-size: 20px;
+    text-align: center;
+}
+
+#nextButton {
+    display: none;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #CD853F;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nextButton:hover {
+    background-color: #8B4513;
+}

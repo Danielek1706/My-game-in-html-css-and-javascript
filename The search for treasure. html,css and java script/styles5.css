@@ -1,0 +1,94 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #533017, #2c1e15);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;/* Rozmiar tytułu */
+    color: #ffd700; /* Złoty kolor tytułu */
+    text-shadow: 2px 2px 4px rgb(247, 247, 247); /* Cień tekstu */
+    
+}
+
+main p:nth-child(1) {
+
+    font-size: 28px;
+        border: 2px solid #8B4513; /* Ramka w kolorze brązowym (przypominającym drewno) */
+        padding: 10px; /* Wypełnienie wewnątrz ramki */
+        max-width: 600px; /* Maksymalna szerokość tekstu */
+        background-color: #D2B48C; /* Tło w kolorze beżowym (przypominającym piasek) */
+        color: #000; /* Kolor tekstu */
+        margin-left: 1070px;
+        margin-top: -250px;
+        
+    }
+main p:nth-child(2) {
+
+    font-size: 28px;
+        border: 2px solid #8B4513; /* Ramka w kolorze brązowym (przypominającym drewno) */
+        padding: 10px; /* Wypełnienie wewnątrz ramki */
+        max-width: 600px; /* Maksymalna szerokość tekstu */
+        background-color: #D2B48C; /* Tło w kolorze beżowym (przypominającym piasek) */
+        color: #000; /* Kolor tekstu */
+        margin-left: 1070px;
+        margin-top: -400px;
+        
+    }
+   
+
+
+
+/* Dodatkowy styl CSS */
+#locationInput::placeholder {
+    color: #8B4513; /* Brązowy kolor, który pasuje do motywu pirackiego */
+}
+
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid  #CD853F;
+    border-radius: 5px;
+}
+
+button {
+ 
+    padding: 10px 20px;
+    background-color: #8B4513; /* Kolor tła przycisku w odcieniu brązowym */
+    color: #FFF; /* Kolor tekstu */
+    border: none;
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    cursor: pointer;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; /* Font piracki */
+    font-size: 16px; /* Rozmiar czcionki */
+}
+
+button:hover {
+    background-color:  #CD853F;
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+img {
+    position: relative; /* Ustawienie pozycji względem pierwotnego miejsca */
+}
+
+.move-right {
+    left: 100px; /* Przesunięcie w prawo o 20 pikseli */
+    width: 600px; /* Nowa szerokość obrazka */
+    height: 400px; /* Nowa wysokość obrazka */
+    top: 40px; /*przesuniecie obrazka w góre lub w dół */
+
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.The Pirate Task</title>
+    <link rel="stylesheet" type="text/css" href="styles3.css">
+</head>
+<body>
+    
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-message"></p>
+            <button id="nextButton" onclick="nextTask()" style="display: none;">Next</button>
+        </div>
+    </div>
+    <div id="riddle">
+        <header>
+        <h1>1.The Pirate Riddle</h1>
+        </header>
+        <main>
+        <p><strong>Oho, the first pirate task is before you!</strong></p>
+        <img src="zagadka.png" alt="zagadka" width="400" height="500" class="move-right">
+        <p><strong>The riddle is:</strong></p>
+        <p><strong>Gold, treasures, diamonds,<br>
+        All of ours, are at your fingertips,<br>
+        For these treasures, an eye is worth,<br>
+        However, my appearance steals the start of our dreams.</strong></p>
+        <p><strong>What do you think, my fellow pirates? What could it be?</strong></p>
+        <input type="text" id="answer" placeholder="Your answer is...">
+        <button onclick="checkAnswer()">Check</button>
+        <p id="result"></p>
+        <button id="arrowButton"></button>
+
+    </main>            
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
